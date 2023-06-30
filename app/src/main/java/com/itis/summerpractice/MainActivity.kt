@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             val name = findViewById<EditText>(R.id.editTextNumber3).text
             val age = findViewById<EditText>(R.id.editTextNumber2).text.toString().toInt()
             val height = findViewById<EditText>(R.id.editTextNumber).text.toString().toInt()
-            val weight = findViewById<EditText>(R.id.editTextNumberSigned).text.toString().toDouble()
+            val weight = findViewById<EditText>(R.id.editTextNumberDecimal).text.toString().toDouble()
             if (name.length in 1..50 && age in 1..149 &&
                 height in 1..249 && weight in 1.0..249.0) {
                 answer = (name.length + age + height + weight + 1000).toInt()

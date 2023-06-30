@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.715" />
 
     <EditText
-        android:id="@+id/editTextNumberSigned"
+        android:id="@+id/editTextNumberDecimal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -40,7 +40,7 @@
         android:ems="10"
         android:inputType="number"
         android:hint="Height"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
