@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">SummerPractice</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Profile Screen</string>
 </resources>
