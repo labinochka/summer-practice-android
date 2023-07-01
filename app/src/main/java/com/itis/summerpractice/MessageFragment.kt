@@ -1,6 +1,32 @@
 package com.itis.summerpractice
 
+import android.os.Bundle
+import android.view.View
 import androidx.fragment.app.Fragment
+import com.google.android.material.snackbar.Snackbar
+import com.itis.summerpractice.databinding.FragmentMessageBinding
 
 class MessageFragment : Fragment(R.layout.fragment_message) {
+    private var binding: FragmentMessageBinding? = null
+    private var adapter: UserAdapter? = null
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding = FragmentMessageBinding.bind(view)
+
+        initAdapter()
+    }
+
+    private fun initAdapter() {
+        adapter = UserAdapter(UserRepository.list,
+        onItemClick = {user ->
+            Snackbar.make(binding!!.root, user.name, Snackbar.LENGTH_LONG).show()
+        })
+        binding?.rvUsers?.adapter = adapter
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding = null
+    }
 }
