@@ -9,36 +9,12 @@
         android:name="com.itis.summerpractice.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
-        <action
-            android:id="@+id/action_mainFragment2_to_messageFragment"
-            app:destination="@id/messageFragment" />
-        <action
-            android:id="@+id/action_mainFragment2_to_newsFragment2"
-            app:destination="@id/newsFragment" />
-        <action
-            android:id="@+id/action_mainFragment2_to_settingFragment"
-            app:destination="@id/settingFragment" />
-        <action
-            android:id="@+id/action_mainFragment2_to_profileFragment"
-            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/newsFragment"
         android:name="com.itis.summerpractice.NewsFragment"
         android:label="fragment_news"
         tools:layout="@layout/fragment_news" >
-        <action
-            android:id="@+id/action_newsFragment2_to_messageFragment"
-            app:destination="@id/messageFragment" />
-        <action
-            android:id="@+id/action_newsFragment2_to_mainFragment2"
-            app:destination="@id/mainFragment" />
-        <action
-            android:id="@+id/action_newsFragment2_to_profileFragment"
-            app:destination="@id/profileFragment" />
-        <action
-            android:id="@+id/action_newsFragment2_to_settingFragment"
-            app:destination="@id/settingFragment" />
         <action
             android:id="@+id/action_newsFragment_to_chanelFragment"
             app:destination="@id/chanelFragment" />
@@ -48,54 +24,18 @@
         android:name="com.itis.summerpractice.MessageFragment"
         android:label="fragment_message"
         tools:layout="@layout/fragment_message" >
-        <action
-            android:id="@+id/action_messageFragment_to_settingFragment"
-            app:destination="@id/settingFragment" />
-        <action
-            android:id="@+id/action_messageFragment_to_mainFragment2"
-            app:destination="@id/mainFragment" />
-        <action
-            android:id="@+id/action_messageFragment_to_newsFragment2"
-            app:destination="@id/newsFragment" />
-        <action
-            android:id="@+id/action_messageFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.itis.summerpractice.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
-        <action
-            android:id="@+id/action_profileFragment_to_newsFragment2"
-            app:destination="@id/newsFragment" />
-        <action
-            android:id="@+id/action_profileFragment_to_mainFragment2"
-            app:destination="@id/mainFragment" />
-        <action
-            android:id="@+id/action_profileFragment_to_messageFragment"
-            app:destination="@id/messageFragment" />
-        <action
-            android:id="@+id/action_profileFragment_to_settingFragment"
-            app:destination="@id/settingFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingFragment"
         android:name="com.itis.summerpractice.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" >
-        <action
-            android:id="@+id/action_settingFragment_to_messageFragment"
-            app:destination="@id/messageFragment" />
-        <action
-            android:id="@+id/action_settingFragment_to_mainFragment2"
-            app:destination="@id/mainFragment" />
-        <action
-            android:id="@+id/action_settingFragment_to_newsFragment2"
-            app:destination="@id/newsFragment" />
-        <action
-            android:id="@+id/action_settingFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/chanelFragment"
