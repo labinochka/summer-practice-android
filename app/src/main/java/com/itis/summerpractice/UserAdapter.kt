@@ -9,7 +9,6 @@ class UserAdapter(
     private var list: List<User>,
     private val onItemClick: (User) -> Unit,
 ) : RecyclerView.Adapter<UserItem>() {
-
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -21,13 +20,13 @@ class UserAdapter(
         ),
         onItemClick = onItemClick
     )
-
-
     override fun getItemCount(): Int {
         return list.size
     }
-
     override fun onBindViewHolder(holder: UserItem, position: Int) {
         holder.onBind(list[position])
+    }
+    fun getItem(position: Int): User? {
+        return list[position]
     }
 }

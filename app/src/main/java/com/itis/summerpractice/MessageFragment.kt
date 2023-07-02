@@ -2,9 +2,11 @@ package com.itis.summerpractice
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
-import com.google.android.material.snackbar.Snackbar
+import androidx.navigation.fragment.findNavController
 import com.itis.summerpractice.databinding.FragmentMessageBinding
+
 
 class MessageFragment : Fragment(R.layout.fragment_message) {
     private var binding: FragmentMessageBinding? = null
@@ -18,10 +20,11 @@ class MessageFragment : Fragment(R.layout.fragment_message) {
     }
 
     private fun initAdapter() {
-        adapter = UserAdapter(UserRepository.list,
-        onItemClick = {user ->
-            Snackbar.make(binding!!.root, user.name, Snackbar.LENGTH_LONG).show()
-        })
+        adapter = UserAdapter(UserRepository.list
+        ) { user ->
+            val bundle = UserFragment.createBundle(user.id)
+            findNavController().navigate(R.id.action_messageFragment_to_userFragment, bundle)
+        }
         binding?.rvUsers?.adapter = adapter
     }
 

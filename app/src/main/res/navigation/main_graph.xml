@@ -60,6 +60,9 @@
         <action
             android:id="@+id/action_messageFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_messageFragment_to_userFragment"
+            app:destination="@id/userFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -105,5 +108,13 @@
         <action
             android:id="@+id/action_chanelFragment_to_newsFragment"
             app:destination="@id/newsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.itis.summerpractice.UserFragment"
+        android:label="UserFragment" >
+        <action
+            android:id="@+id/action_userFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
     </fragment>
 </navigation>

@@ -1,5 +1,7 @@
 package com.itis.summerpractice
 
+import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.itis.summerpractice.databinding.ItemUsersBinding
 
