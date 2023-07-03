@@ -17,7 +17,7 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
         binding?.run {
             subscribeBut.setOnClickListener{
                 val className = this::class
-                val bundle = ChanelFragment.createBundle(className)
+                val bundle = ChanelFragment.createBundle(className.toString())
                 findNavController().navigate(R.id.action_newsFragment_to_chanelFragment, bundle)
             }
         }
