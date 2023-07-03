@@ -13,7 +13,7 @@ class ChanelFragment : Fragment(R.layout.fragment_chanel) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentChanelBinding.bind(view)
-        val className = arguments?.getString("ARG_NAME")
+        val className = arguments?.getString(ARG_NAME)
         Snackbar.make(binding!!.root, className.orEmpty(), Snackbar.LENGTH_LONG).show()
 
         binding?.run {
@@ -26,5 +26,15 @@ class ChanelFragment : Fragment(R.layout.fragment_chanel) {
     override fun onDestroyView() {
         super.onDestroyView()
         binding = null
+    }
+
+    companion object {
+        private const val ARG_NAME = "ARG_NAME"
+
+        fun createBundle(className: String): Bundle {
+            val bundle = Bundle()
+            bundle.putString(ARG_NAME, className)
+            return bundle
+        }
     }
 }
