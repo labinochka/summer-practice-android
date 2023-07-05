@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.itis.summerpractice.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.itis.summerpractice.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_newsFragment_to_chanelFragment"
+            app:destination="@id/chanelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.itis.summerpractice.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" >
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.itis.summerpractice.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.itis.summerpractice.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+    </fragment>
+    <fragment
+        android:id="@+id/chanelFragment"
+        android:name="com.itis.summerpractice.ChanelFragment"
+        android:label="fragment_chanel"
+        tools:layout="@layout/fragment_chanel" >
+        <action
+            android:id="@+id/action_chanelFragment_to_newsFragment"
+            app:destination="@id/newsFragment" />
+    </fragment>
+</navigation>
