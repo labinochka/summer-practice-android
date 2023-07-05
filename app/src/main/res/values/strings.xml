@@ -1,20 +1,20 @@
 <resources>
     <string name="app_name">SummerPractice</string>
     <string name="hello_blank_fragment">Profile Screen</string>
-    <string name="welcome">Welcome!</string>
-    <string name="Messages">Messages</string>
-    <string name="SignIn">Sign In</string>
-    <string name="SignUp">SignUp</string>
-    <string name="Notifications">Notifications</string>
-    <string name="Accout">Account</string>
-    <string name="Privacy">Privacy</string>
-    <string name="Appearance">Appearance</string>
-    <string name="NoNews">No news</string>
-    <string name="Subscribe">Subscribe to chanel</string>
-    <string name="Develop">Page in developed</string>
-    <string name="Exit">Exit</string>
-    <string name="Write">Write</string>
-    <string name="Name">Name</string>
-    <string name="desc">Desc</string>
+    <string name="tvWelcomeText">Welcome!</string>
+    <string name="tvMessagesText">Messages</string>
+    <string name="btnSignInText">Sign In</string>
+    <string name="btnSignUpText">SignUp</string>
+    <string name="btnNotificationsText">Notifications</string>
+    <string name="btnAccoutText">Account</string>
+    <string name="btnPrivacyText">Privacy</string>
+    <string name="btnAppearanceText">Appearance</string>
+    <string name="tvNoNewsText">No news</string>
+    <string name="btnSubscribeText">Subscribe to chanel</string>
+    <string name="tvDevelopText">Page in developed</string>
+    <string name="btnExitText">Exit</string>
+    <string name="btnWriteText">Write</string>
+    <string name="tvNameText">Name</string>
+    <string name="tvDescText">Desc</string>
     <string name="textView">TextView</string>
 </resources>

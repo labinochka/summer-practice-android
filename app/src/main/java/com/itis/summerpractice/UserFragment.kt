@@ -9,21 +9,20 @@ import com.bumptech.glide.RequestManager
 import com.itis.summerpractice.databinding.FragmentUserBinding
 
 class UserFragment : Fragment(R.layout.fragment_user) {
-    private var binding: FragmentUserBinding? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentUserBinding.bind(view)
+        val binding = FragmentUserBinding.bind(view)
 
         val adapter = UserAdapter(UserRepository.list) {}
 
-        val userId = arguments?.getInt(ARG_ID)
-        val user = adapter.getItem(userId!!)
-        binding?.run {
-            tvId.text = "ID: " + user!!.id.toString()
+        val userId = requireArguments().getInt(ARG_ID)
+        val user = adapter.getItem(userId)
+        binding.run {
+            tvId.text = "ID: " + user.id.toString()
             tvUser.text = "Name: " + user.name
             tvText.text = "Description: " + user.desc
-            Glide.with(binding!!.root)
+            Glide.with(binding.root)
                 .load(user.url)
                 .into(imgUser)
             btnExit.setOnClickListener{
@@ -34,7 +33,6 @@ class UserFragment : Fragment(R.layout.fragment_user) {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding = null
     }
 
     companion object {

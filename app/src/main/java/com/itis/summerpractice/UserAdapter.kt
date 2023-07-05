@@ -26,7 +26,7 @@ class UserAdapter(
     override fun onBindViewHolder(holder: UserItem, position: Int) {
         holder.onBind(list[position])
     }
-    fun getItem(position: Int): User? {
+    fun getItem(position: Int): User {
         return list[position]
     }
 }

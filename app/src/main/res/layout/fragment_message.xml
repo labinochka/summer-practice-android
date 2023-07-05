@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@color/fiol"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/Messages"
+        android:text="@string/tvMessagesText"
         android:textColor="@color/green2"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
